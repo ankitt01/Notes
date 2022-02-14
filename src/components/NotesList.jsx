@@ -1,8 +1,13 @@
 import React from 'react'
-
+import Note from './Note'
 function NotesList() {
   return (
-    <div>NotesList</div>
+    <div className="notes-list">
+      <Note />
+      <Note />
+      <Note />
+      <Note />
+    </div>
   )
 }
 

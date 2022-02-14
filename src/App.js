@@ -1,10 +1,11 @@
 
 import './App.css';
+import NotesList from './components/NotesList';
 
 function App() {
   return (
-    <div className>
-      hello react
+    <div className='container' >
+      <NotesList />
     </div>
   );
 }
