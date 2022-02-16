@@ -16,7 +16,7 @@ function AddNote({handleAddNote}) {
     }
   return (
     <div className='note new'>
-        <textarea cols="10" rows="8" value={noteText} placeholder='Type to add a note..' onChange={handleChange}></textarea>
+        <textarea cols="10" rows="8" value={noteText} placeholder='Type to add a note..' onChange={handleChange} ></textarea>
         <div className='note-footer'>
             <small>{characterLimit-noteText.length} Remaining</small>
             <button className='save' onClick={handleSaveClick}>Save</button>
