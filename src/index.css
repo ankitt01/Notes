@@ -12,6 +12,32 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.note.new {
+    background-color: #67d7cc;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    background-color: #67d7cc;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.save {
+    background-color: #e1e1e1;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5em 0.75em;
+}
+
+.save:hover {
+    cursor: pointer;
+    background-color: #ededed;
+}
+
 .note {
     display: flex;
     flex-direction: column;
@@ -21,10 +47,15 @@ html {
     background-color: #fef68a;
     min-height: 170px;
     border-radius: 12px;
+    white-space: pre-wrap;
 }
 
 .note-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.delete-icon {
+    cursor: pointer;
 }
